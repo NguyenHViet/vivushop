@@ -1,0 +1,197 @@
+.home-product{
+    margin-bottom: 10px;
+}
+
+.homeProductItem{
+    position: relative;
+    display: block;
+    text-decoration: none;
+    background-color: var(--white-color);
+    margin-top: 10px;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    transition: transform linear 0.1s;
+    will-change: transform;
+}
+
+.homeProductItem:hover{
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.5);
+    transform: translateY(-4px);
+}
+
+.homeProductItem__img{
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.homeProductItem__name{
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    margin: 10px 10px 6px;
+    max-height: 3.6rem;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    color: var(--text-color);
+    /* --neu rut gon con 1 dong:
+    text-overflow: ellipsis;
+    white-space: nowrap; */
+}
+
+.homeProductItem__price{
+    display: flex;
+    justify-content: baseline;
+    flex-wrap: wrap;
+}
+
+.homeProductItem__priceOld{
+    font-size: 1.2rem;
+    margin-left: 10px;
+    color: #666;
+    text-decoration: line-through;
+}
+
+.homeProductItem__priceNew{
+    font-size: 1.4rem;
+    margin-left: 10px;
+    color: var(--primary-color);
+}
+
+.homeProductItem__action{
+    display: flex;
+    margin: 6px 10px 0;
+    justify-content: space-between;
+}
+
+.homeProductItem__like{
+    font-size: 1.3rem;
+}
+
+i.homeProductItem__like--liked-icon{
+    display: none;
+    color: #ee4d2d;
+}
+
+.homeProductItem__like--liked .homeProductItem__like--liked-icon{
+    display: block;
+}
+
+.homeProductItem__like--liked .homeProductItem__like--like-icon{
+    display: none;
+}
+
+.homeProductItem__rating{
+    font-size: 0.8rem;
+    color: #d5d5d5;
+    transform-origin: right;
+    margin: -1px 0 0 auto;
+
+}
+
+.homeProductItem__star--gold{
+    color: var(--star-gold-color);
+}
+
+.homeProductItem__sold{
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-left: 6px;
+}
+
+.homeProductItem__origin{
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 10px 0;
+    font-size: 1.2rem;
+}
+
+.homeProductItem__brand{
+    color: #666;
+}
+
+.homeProductItem__originName{
+    color: #666;
+}
+
+.homeProductItem__favourite{
+    position: absolute;
+    top: 10px;
+    left: -4px;
+    color: var(--primary-color);
+    background-color: currentColor;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.6rem;
+    padding-right: 4px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.homeProductItem__favourite i{
+    font-size: 1rem;
+    color: var(--white-color);
+    margin: 0 2px 0 4px;
+}
+
+.homeProductItem__favourite span{
+    color: var(--white-color);
+}
+
+.homeProductItem__favourite::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    border-top: 4px solid currentColor;
+    border-left: 4px solid transparent;
+    filter: brightness(0.6);
+}
+
+.homeProductItem__saleOff{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 36px;
+    color: rgba(255, 216, 64, 0.975);
+    padding-top: 2px;
+    background-color: currentColor;
+    text-align: center;
+    border-top-right-radius: 2px;
+}
+
+.homeProductItem__saleOffPercent{
+    color: #fe4d2d;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+}
+
+.homeProductItem__saleOffLabel{
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+}
+
+.homeProductItem__saleOff::after{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    border-style: solid;
+    border-width: 0 20px 4px;
+    border-color: transparent currentColor transparent currentColor;
+}
+
+.home-product-m-pagination{
+    margin-top: 48px;
+    margin-bottom: 32px;
+}
